@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/*Como poner una imagen de fondo, centrada, completa y respetando el aspect ratio*/
+html { 
+  background: url("../images/main-image-7.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.contenedor {
+  width: 1200px;
+  /*width: 75%;*/
+  margin: 10px auto;
+  border-radius: 10px;
+  border: #626262 2px solid;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 10px #d4acee;
+  background: black;
+}
+
+
+
+header {
+  background-color: black;
+  display: block;
+}
+
+#titulo-nombre {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 4em;
+  font-family: sans-serif;
+}
+
+header nav {
+  /*background: black;*/
+}
+
+header nav ul {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  padding: 0 100px;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+header nav ul li a::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-color: yellow;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  height: 0;
+  /*width: 100%;*/
+  transition: all 0.3s;
+
+
+  /*content: "";
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 2px solid rgb(190, 46, 98);
+  border-left: 2px solid rgb(190, 46, 98);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.8s;*/
+}
+
+header nav ul li a::before:hover{
+  height: 100%;
+  transition: all linear 0.3s;
+  color: red;
+}
+
+.separador{
+      border-top: 1px solid white;
+}
+
+.alfa{
+  height: 550px;
+  background: url("../images/main-image-6.jpg") no-repeat center center scroll; 
+  background-size: cover;
+}
+
+.beta{
+ height: 200px;
+
+
+}
+
+main{
+  /*background-color: rgb(51, 15, 87);*/
+  background-image: url('../images/main-image-7.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.cover-img{
+  width: 100%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+main h2,
+.galery h2 {
+    text-align: center;
+    color: rgb(106, 233, 62);
+    padding: 20px 0;
+    font-size: 2em;
+}
+
+.profile-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-img+figcaption{
+  text-align: center;
+  padding: 10px 0;
+}
+.profile p{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px 30%;
+  line-height: 20px;
+
+}
+
+.galery{
+  /*background: rgb(90, 32, 156)*/
+}
+
+article h3 {
+    text-align: center;
+    color: rgb(106, 233, 62);
+    padding: 15px 0;
+    font-size: 1.3em;
+}
+
+.galery-images{
+  overflow: auto;
+}
+
+.galery-images li{
+  border: solid white 1px;
+  margin: 0px 7px;
+  display: inline-block;
+}
+
+.galery a{
+  display: inline-block;
+  padding: 20px 0;
+}
+
+footer {
+  background: linear-gradient(0deg, rgb(8, 21, 75), #1945b3 70%);
+}
+
+aside ul{
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+}
+
+aside ul li{
+  display: inline;
+}
+
+aside ul li p{
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 100px;
+  background: rgb(0, 255, 25);
+  }
+
+aside ul li p:hover{
+
+}
+aside ul li ::before:hover{
+  color: yellow;
+  background: rgb(8, 21, 75);
+}
+
+
+
+aside ul li .fbk::before{
+  content: "\f231";
+  font-family: "Ionicons";
+  font-size: 30px;
+  color: rgb(8, 21, 75);
+}
+
+
+aside ul li .twt::before{
+  content: "\f243";
+  font-family: "Ionicons";
+  font-size: 30px;
+  color: rgb(8, 21, 75);
+}
+
+
+footer p{
+  text-align: center;
+  padding: 15px;
+}
+
+.boton{
+
+}
