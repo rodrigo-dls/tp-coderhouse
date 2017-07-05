@@ -7,7 +7,6 @@
   font-size: 18px;
   font-family: sans-serif;
   color: white;
-  text-align: center;
 }
 
 /*Como poner una imagen de fondo, centrada, completa y respetando el aspect ratio*/
@@ -21,27 +20,24 @@ html {
 }
 
 .contenedor {
-  width: 1200px;
-  /*width: 75%;*/
+  max-width: 1200px;
+  width: 81%;
   margin: 10px auto;
+  padding: 1%;
   border-radius: 10px;
-  border: #626262 2px solid;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  /*border: #626262 2px solid;*/
   box-shadow: 0px 0px 20px 10px #d4acee;
   background: black;
 }
 
-
-
 header {
-  background-color: black;
-  display: block;
 }
 
 #titulo-nombre {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 1%;
+  padding-bottom: 2%;
   font-size: 4em;
   font-family: sans-serif;
 }
